@@ -40,6 +40,17 @@ test("public pages use production email and local images", () => {
     for (const match of html.matchAll(/data-online-src="([^"]+)"/gi)) {
       const src = match[1];
       assert.ok(/^https:\/\//i.test(src), `Online image must be https in ${path.relative(PUBLIC, file)}: ${src}`);
+      assert.ok(
+        html.includes('src="/assets/site.js"'),
+        `Page with online image upgrades must load /assets/site.js: ${path.relative(PUBLIC, file)}`
+      );
+    }
+
+    if (html.includes("data-hero-online=")) {
+      assert.ok(
+        html.includes('src="/assets/site.js"'),
+        `Page with online hero upgrade must load /assets/site.js: ${path.relative(PUBLIC, file)}`
+      );
     }
 
     for (const match of html.matchAll(/--hero-image:url\(['"]?([^'")]+)['"]?\)/gi)) {

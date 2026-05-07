@@ -136,3 +136,34 @@ test("email subscribe accepts a valid opt-in and writes an audit record", async 
     server.close();
   }
 });
+
+test("email subscribe accepts Railway form submissions encoded as URLSearchParams", async () => {
+  const { server, baseUrl } = await startServer();
+  try {
+    const body = new URLSearchParams({
+      companyName: "Railway Trades LLC",
+      contactName: "Alex Smith",
+      email: "alex@railwaytrades.example",
+      role: "Estimator",
+      tradeCategory: "Roofing",
+      region: "Colorado",
+      consent: "yes",
+    });
+
+    const resp = await fetch(`${baseUrl}/api/email-subscribe`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+      },
+      body,
+    });
+
+    assert.equal(resp.status, 200);
+    const json = await resp.json();
+    assert.equal(json.ok, true);
+    assert.ok(json.subscriptionId);
+  } finally {
+    server.close();
+  }
+});
