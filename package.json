@@ -1,0 +1,29 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaby2026x/Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gaby2026x/Website/issues"
+  },
+  "homepage": "https://github.com/Gaby2026x/Website#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "multer": "^2.0.2",
+    "nodemailer": "^8.0.1"
+  }
+}

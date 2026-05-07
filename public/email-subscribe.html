@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B2B Email Sign-up | Crestara Construction Autority</title>
+    <meta name="description" content="Opt-in B2B mailing list sign-up for contractors, suppliers, and partners of Crestara Construction Autority. This is the disclosed source of every business email address we hold." />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="icon" type="image/jpeg" href="/assets/images/logo.jpeg" />
+  </head>
+  <body>
+    <div class="topbar">
+  <div class="container topbar-inner">
+    <div class="brand">
+      <img src="/assets/images/logo.jpeg" alt="Crestara Construction Autority logo" class="brand-logo" width="56" height="56" />
+      <div class="brand-text">
+        <strong>Crestara Construction Autority</strong>
+        <span>Prime Contract Management &amp; Subcontract Allocation</span>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <a data-nav href="/index.html">Home</a>
+      <a data-nav href="/services.html">Services</a>
+      <a data-nav href="/compliance.html">Compliance</a>
+      <a data-nav href="/projects.html">Opportunities</a>
+      <a data-nav href="/contact.html">Contact</a>
+      <a data-nav href="/login.html">Contractor Portal</a>
+      <a data-nav class="button" href="/approved-contractor.html">Become Approved</a>
+    </nav>
+  </div>
+</div>
+
+    <main class="section">
+      <div class="container">
+        <h1>B2B Email Sign-up</h1>
+        <p class="lead">
+          This page is the single, disclosed source of every business email address held by
+          Crestara Construction Autority. Approved contractors, suppliers, vendors, and project
+          partners use this form to opt in to receive operational and contracting updates from us.
+        </p>
+
+        <div class="notice">
+          <strong>Source-of-collection statement (for SMTP / ESP audits):</strong>
+          all business email addresses on our outbound mailing list are collected through this
+          public sign-up form at
+          <code>/email-subscribe.html</code> on
+          <code>cresteraconstructionauthority.com</code>. Each submission is logged with a
+          timestamp, originating IP address, user-agent, and a copy of the consent text the
+          subscriber agreed to. Logs are retained for the lifetime of the subscription and are
+          available to email service providers on request for compliance verification.
+        </div>
+
+        <div class="grid" style="margin-top:18px;">
+          <div class="card">
+            <h2>Who this is for</h2>
+            <ul>
+              <li>Approved 1099 contractors and trade companies in our network</li>
+              <li>Material suppliers and equipment vendors quoting on our projects</li>
+              <li>General-contractor and developer partners</li>
+              <li>Insurance, bonding, and compliance professionals working with us</li>
+            </ul>
+            <p class="muted">
+              This list is strictly business-to-business. We do not collect or send to consumer
+              addresses, and we do not buy, rent, sell, or share email lists.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>What you will receive</h2>
+            <ul>
+              <li>Open trade-package and subcontract opportunity announcements</li>
+              <li>Compliance, insurance, and OSHA documentation reminders</li>
+              <li>Prequalification windows and approved-contractor renewals</li>
+              <li>Occasional company updates relevant to our contractor network</li>
+            </ul>
+            <p class="muted">
+              Typical sending frequency: 1–4 emails per month. You can unsubscribe at any time
+              using the link in every message or by emailing
+              <a href="mailto:info@cresteraconstructionauthority.com">info@cresteraconstructionauthority.com</a>.
+            </p>
+          </div>
+        </div>
+
+        <section class="card" style="margin-top:18px;">
+          <h2>Opt in to the mailing list</h2>
+          <p class="muted">All fields marked * are required. Please use a business email address.</p>
+
+          <form id="subscribe-form" method="post" action="/api/email-subscribe" novalidate>
+            <div class="grid">
+              <label>
+                Company name *
+                <input type="text" name="companyName" required maxlength="200" autocomplete="organization" />
+              </label>
+              <label>
+                Contact name *
+                <input type="text" name="contactName" required maxlength="200" autocomplete="name" />
+              </label>
+              <label>
+                Business email *
+                <input type="email" name="email" required maxlength="320" autocomplete="email" />
+              </label>
+              <label>
+                Job title / role
+                <input type="text" name="role" maxlength="120" autocomplete="organization-title" />
+              </label>
+              <label>
+                Trade category or business type
+                <input type="text" name="tradeCategory" maxlength="160" />
+              </label>
+              <label>
+                Region / state of operation
+                <input type="text" name="region" maxlength="160" />
+              </label>
+            </div>
+
+            <label style="display:block;margin-top:12px;">
+              How did you hear about us? (optional)
+              <input type="text" name="referrer" maxlength="200" />
+            </label>
+
+            <div class="notice" style="margin-top:14px;">
+              <label style="display:flex;gap:10px;align-items:flex-start;">
+                <input type="checkbox" name="consent" value="yes" required style="margin-top:4px;" />
+                <span>
+                  <strong>Consent *</strong> &mdash; I confirm I am authorised to subscribe the
+                  business email above and I expressly opt in to receive operational, compliance,
+                  and contracting emails from Crestara Construction Autority. I understand I can
+                  withdraw consent at any time using the unsubscribe link in every email or by
+                  contacting <a href="mailto:info@cresteraconstructionauthority.com">info@cresteraconstructionauthority.com</a>.
+                  I have read the
+                  <a href="/privacy.html">Privacy Policy</a>.
+                </span>
+              </label>
+            </div>
+
+            <!-- Honeypot (anti-bot): real users leave this empty. -->
+            <div style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+              <label>Do not fill this field
+                <input type="text" name="website" tabindex="-1" autocomplete="off" />
+              </label>
+            </div>
+
+            <div class="hero-actions" style="margin-top:14px;">
+              <button class="cta orange" type="submit">Subscribe</button>
+              <a class="cta secondary" href="/privacy.html">Read Privacy Policy</a>
+            </div>
+
+            <p id="subscribe-status" role="status" aria-live="polite" class="muted" style="margin-top:12px;"></p>
+          </form>
+        </section>
+
+        <section class="card" style="margin-top:18px;">
+          <h2>How we handle your data</h2>
+          <ul>
+            <li><strong>Lawful basis:</strong> consent (you tick the box on this page) and legitimate B2B interest in operational contracting communications.</li>
+            <li><strong>Data we record:</strong> the form fields you submit, plus a timestamp, your IP address, your browser user-agent, and the URL of this page &mdash; the proof-of-consent record requested by SMTP providers.</li>
+            <li><strong>Storage:</strong> records are kept by Crestara Construction Autority and are not sold, rented, or shared with third parties for marketing.</li>
+            <li><strong>Processors:</strong> we use a transactional SMTP provider to deliver the messages you opt in to here; that provider acts only on our instructions.</li>
+            <li><strong>Your rights:</strong> you can request access, correction, or deletion of your record at any time at <a href="mailto:info@cresteraconstructionauthority.com">info@cresteraconstructionauthority.com</a>.</li>
+          </ul>
+          <p class="muted">
+            Full details are available in the <a href="/privacy.html">Privacy Policy</a> and
+            <a href="/cookie-policy.html">Cookie Policy</a>.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <strong>Crestara Construction Autority</strong>
+        <div class="small">Prime construction contract management — awarding structured subcontract packages to approved independent 1099 contractors across multiple U.S. markets.</div>
+        <ul>
+          <li>Licensed &amp; Insured</li>
+          <li>Serving Multiple U.S. Markets</li>
+          <li>Independent 1099 Contractor Model</li>
+          <li>Equal Opportunity Contract Allocation</li>
+        </ul>
+      </div>
+      <div>
+        <div class="small">
+          <div style="display:grid;gap:6px;">
+            <div>
+              <a href="/privacy.html">Privacy Policy</a> · <a href="/terms-of-use.html">Website Terms</a> · <a href="/terms.html">Contractor Terms</a> ·
+              <a href="/cookie-policy.html">Cookie Policy</a>
+            </div>
+            <div>
+              <a href="/accessibility.html">Accessibility</a> · <a href="/equal-opportunity.html">Equal Opportunity</a> · <a href="/prequalification.html">Prequalification</a> ·
+              <a href="/testimonials.html">Testimonials</a> · <a href="/code-of-conduct.html">Code of Conduct</a> · <a href="/contact.html">Contact</a> ·
+              <a href="/email-subscribe.html">B2B Updates Sign-up</a>
+            </div>
+            <div>Email: <a href="mailto:info@cresteraconstructionauthority.com">info@cresteraconstructionauthority.com</a></div>
+            <div class="notice" style="margin-top:6px;">
+              <div>Legal entity: cresteraconstructionauthority LLC (Montana)</div>
+              <div>Office address: Montana, United States (provided upon request)</div>
+              <div>Phone: +1 (406) 555-0136</div>
+              <div>Hours: Mon–Fri 9:00am–5:00pm (MT)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="small" style="margin-top:14px;">© 2026 Crestara Construction Autority. All rights reserved.</div>
+  </div>
+</footer>
+
+    <script>
+      // Progressive enhancement: submit asynchronously and show inline status.
+      // The form also works as a normal HTML POST without JavaScript.
+      (function () {
+        var form = document.getElementById("subscribe-form");
+        if (!form) return;
+        var status = document.getElementById("subscribe-status");
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          status.textContent = "Submitting…";
+          var data = new FormData(form);
+          fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: { Accept: "application/json" },
+          })
+            .then(function (resp) {
+              return resp.json().then(function (json) {
+                return { ok: resp.ok, json: json };
+              });
+            })
+            .then(function (result) {
+              if (result.ok && result.json && result.json.ok) {
+                form.reset();
+                status.textContent =
+                  "Thank you — your subscription has been recorded. You can unsubscribe at any time.";
+              } else {
+                status.textContent =
+                  (result.json && result.json.error) ||
+                  "Sorry — your subscription could not be recorded. Please try again or email info@cresteraconstructionauthority.com.";
+              }
+            })
+            .catch(function () {
+              status.textContent =
+                "Network error. Please try again or email info@cresteraconstructionauthority.com.";
+            });
+        });
+      })();
+    </script>
+  </body>
+</html>

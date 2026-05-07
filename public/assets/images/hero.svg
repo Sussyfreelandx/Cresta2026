@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1f3a"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <pattern id="p" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(25)">
+      <line x1="0" y1="0" x2="0" y2="24" stroke="rgba(255,255,255,0.06)" stroke-width="6"/>
+    </pattern>
+  </defs>
+  <rect width="2400" height="1200" fill="url(#g)"/>
+  <rect width="2400" height="1200" fill="url(#p)"/>
+
+  <!-- Abstract crane + skyline (custom vector, not stock) -->
+  <g opacity="0.22" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M340 1040H2260"/>
+    <path d="M520 1040V340"/>
+    <path d="M520 340H1500"/>
+    <path d="M980 340L780 520"/>
+    <path d="M1500 340L1660 520"/>
+    <path d="M520 520H740"/>
+    <path d="M1660 520H1840"/>
+    <path d="M1840 520V760"/>
+    <path d="M520 760H1840"/>
+  </g>
+
+  <g opacity="0.35">
+    <circle cx="2080" cy="220" r="90" fill="#f97316"/>
+    <circle cx="2080" cy="220" r="160" fill="rgba(249,115,22,0.18)"/>
+  </g>
+</svg>
+

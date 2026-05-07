@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard | Crestara Construction Autority</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="icon" type="image/jpeg" href="/assets/images/logo.jpeg" />
+    <link rel="stylesheet" href="/admin/admin.css" />
+  </head>
+  <body class="admin-body">
+    <div class="admin-shell">
+      <aside class="admin-sidebar" aria-label="Admin navigation">
+        <div class="admin-brand">
+          <strong>Internal Admin</strong>
+          <div class="muted">Contractor Governance</div>
+        </div>
+        <nav class="admin-nav">
+          <a href="#dashboard" data-admin-nav>Dashboard</a>
+          <a href="#contractors" data-admin-nav>Contractors</a>
+          <a href="#projects" data-admin-nav>Projects</a>
+          <a href="#compliance" data-admin-nav>Compliance</a>
+          <a href="#scoring" data-admin-nav>Scoring &amp; Ratings</a>
+          <a href="#probation" data-admin-nav>Probation</a>
+          <a href="#allocation" data-admin-nav>Contract Allocation</a>
+          <a href="#reports" data-admin-nav>Reports</a>
+          <a href="#settings" data-admin-nav>Settings</a>
+        </nav>
+        <div class="admin-note muted">
+          Internal only. Access requires admin token.
+        </div>
+      </aside>
+
+      <main class="admin-main">
+        <header class="admin-header">
+          <div>
+            <h1 id="admin-title">Dashboard</h1>
+            <div class="muted" id="admin-subtitle">Operational overview</div>
+          </div>
+          <div class="admin-header-actions">
+            <a class="cta secondary" id="public-site-link" href="/index.html">Public Site</a>
+          </div>
+        </header>
+
+        <section id="admin-view" class="admin-view"></section>
+      </main>
+    </div>
+
+    <script src="/admin/admin.js"></script>
+  </body>
+</html>
+
